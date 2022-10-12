@@ -28,6 +28,7 @@ typedef enum ProcPriority
     HIGH_PRIORITY = 0,
     MEDIUM_PRIORITY,
     LOW_PRIORITY,
+    WATCHDOG_PRIORITY,
 
     ////////////// END //////////////////
 
