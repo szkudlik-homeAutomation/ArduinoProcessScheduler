@@ -1,6 +1,9 @@
 #include "Scheduler.h"
 #include "Process.h"
 
+// global Scheduler object
+Scheduler sched;
+
 Process *Scheduler::_active = NULL;
 
 #ifdef _PROCESS_EXCEPTION_HANDLING

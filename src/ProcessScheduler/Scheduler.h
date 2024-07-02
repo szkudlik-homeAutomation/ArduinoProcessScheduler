@@ -278,4 +278,7 @@ protected:
 
 };
 
+// access to the scheduler object
+extern Scheduler sched;
+
 #endif
