@@ -11,14 +11,13 @@ class Process
     friend class Scheduler;
 public:
     /*
-    * @param manager: The scheduler overseeing this Process
     * @param priority: The priority of this Process defined in config.h
     * @param period: The period this process should be serviced at (SERVICE_CONSTANTLY = As often as possible)
     * @param iterations: Number of iterations this process should be serviced before being disabled (RUNTIME_FOREVER = infinite)
     * @param overSchedThresh: The periods behind this process can get, before a WARNING_PROC_OVERSCHEDULED is triggered
     * (OVERSCHEDULED_NO_WARNING = a warning will never be triggered)
     */
-    Process(Scheduler &manager, ProcPriority priority, uint32_t period,
+    Process(ProcPriority priority, uint32_t period,
             int iterations=RUNTIME_FOREVER,
             uint16_t overSchedThresh = OVERSCHEDULED_NO_WARNING);
 

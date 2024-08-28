@@ -2,9 +2,9 @@
 #include "Scheduler.h"
 
     /*********** PUBLIC *************/
-    Process::Process(Scheduler &scheduler, ProcPriority priority, uint32_t period,
+    Process::Process(ProcPriority priority, uint32_t period,
             int iterations, uint16_t overSchedThresh)
-    : _scheduler(scheduler), _pLevel(priority)
+    : _scheduler(sched), _pLevel(priority)
     {
         this->_enabled = false;
         this->_period = period;
